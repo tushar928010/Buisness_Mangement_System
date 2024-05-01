@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81DAF84A-1A57-4658-A1C0-C3DD8C913A6C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Buisness_Mangement_System</RootNamespace>
+    <AssemblyName>Buisness Mangement System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ReportViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportViewForm.Designer.cs">
+      <DependentUpon>ReportViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewTransaction.Designer.cs">
+      <DependentUpon>frmNewTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntryOfStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntryOfStock.Designer.cs">
+      <DependentUpon>frmEntryOfStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmaddCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmaddCategory.Designer.cs">
+      <DependentUpon>frmaddCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailySales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailySales.Designer.cs">
+      <DependentUpon>frmDailySales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginPanel.Designer.cs">
+      <DependentUpon>frmLoginPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProducts.Designer.cs">
+      <DependentUpon>frmProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistation.Designer.cs">
+      <DependentUpon>frmRegistation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSupplier.Designer.cs">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTotal_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTotal_Product.Designer.cs">
+      <DependentUpon>frmTotal_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPasssword_Changed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPasssword_Changed.Designer.cs">
+      <DependentUpon>frmPasssword_Changed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetByIdReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetByIdReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmNewTransaction.resx">
+      <DependentUpon>frmNewTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEntryOfStock.resx">
+      <DependentUpon>frmEntryOfStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmaddCategory.resx">
+      <DependentUpon>frmaddCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailySales.resx">
+      <DependentUpon>frmDailySales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginPanel.resx">
+      <DependentUpon>frmLoginPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProducts.resx">
+      <DependentUpon>frmProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistation.resx">
+      <DependentUpon>frmRegistation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSupplier.resx">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTotal_Product.resx">
+      <DependentUpon>frmTotal_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPasssword_Changed.resx">
+      <DependentUpon>frmPasssword_Changed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetByIdReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>GetByIdReport.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportViewForm.resx">
+      <DependentUpon>ReportViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-wallpaper-grey-material-design-material-ui.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black-neumorphism-design-style-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-modified.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-modified %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-modified %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-modified %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowbackbutton_79955.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowbackbutton_79955 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowbackbutton_79955 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowbackbutton_79955 %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowbackbutton_79955 %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowbackbutton_79955 %283%29-modified.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowbackbutton_79955 %283%29-modified %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How-can-I-register-my-shop-and-establishment-online.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accout-modified.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12114708.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settring.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4207146.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13360207.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_185750874_rTbc977EBOkAS5a8lTCuwJYoUqwT0Zkh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp6068812-purple-iphone-wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7726488.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-modern-simple-elegant-dark-blue-landing-page-website-background-image_756950.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\58f255472bb219f3adadbf4bc9ecb66b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yMThiYXRjaDktYXVtLTcwXzEuanBn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\af1801fbaa1f99e86792ca30bfdaaff2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\af1801fbaa1f99e86792ca30bfdaaff21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f0a9b5593780864044a448b94f090e7d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7c0b0562db0500d5ee5e9e1d8114d19c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5180116.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7c0b0562db0500d5ee5e9e1d8114d19c1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgSupplier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgAddCategory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgAddProducts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgNewTransaction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgAddStock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgUserSetting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgMenuButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tushar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11c32125-be06-4ed2-9912-5a6133532fed1710326934742-MSB-----1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Silk Sarees, Pattu Sarees Online _ Dresses for Women, Kids and Mens at Pothys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Topshop.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
